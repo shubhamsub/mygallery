@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: solid 1px; */
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(248, 0, 0));
+
+}
+
+.son1 {
+    flex-basis: 30%;
+    line-height: 1.5;
+    text-shadow: 5px 5px 10px black;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+p {
+    color: rgb(255, 145, 0);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.son2 {
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+}
+
+.box {
+    background-size: cover;
+    background-position: bottom;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(7, 3, 3, 0.212);
+    background-blend-mode: color-burn;
+    transition: all 0.5s ease-in-out;
+}
+
+.row-2 {
+    grid-row: span 2;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.box:hover {
+    background-color: #0f020286;
+    background-position: center;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
